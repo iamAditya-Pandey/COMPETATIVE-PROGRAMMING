@@ -51,20 +51,11 @@ int32_t main() {
                     aj++;
                 }
                 else{
-                    ma--;
+                    ma++;
                 };            
             }
         }
-        if (aj>ma){
-            cout<<"Ajisai"<<endl;
-        }
-       else if(ma>aj){
-        cout<<"Mai"<<endl;
-       }
-       else{
-        cout<<"Tie"<<endl;
-       }
-
+    
     }
     return 0;
 }
