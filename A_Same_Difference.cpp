@@ -1,0 +1,56 @@
+// JAI SHREE RAM //
+/*******************************************************
+ * Author: Aditya Pandey
+ * Purpose: Competitive Programming Template
+ * Fast I/O + Optimized compilation flags
+ *******************************************************/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+#define fast_io ios::sync_with_stdio(false); cin.tie(nullptr);
+#define endl '\n'
+#define int long long  // Use 64-bit integers by default
+#define all(x) (x).begin(), (x).end()
+#define yes cout << "YES" << endl
+#define no cout << "NO" << endl
+
+// Debug macro (optional, use only in local testing)
+#ifndef ONLINE_JUDGE
+    #define debug(x) cerr << #x << " = " << x << endl;
+#else
+    #define debug(x)
+#endif
+
+int32_t main() {
+    fast_io;
+
+    int t;
+    cin >> t;
+
+    while (t--) {
+        // Write your test case logic here
+
+        int n;
+        cin>>n;
+
+        string s;
+        cin>>s;
+
+        char ch = s[n-1];
+        int cnt =0;
+
+        for(int i=0;i<n;i++){
+
+            if(s[i]==ch){
+                cnt++;
+            }
+
+        }
+
+        cout<<(n-cnt)<<endl;
+
+    }
+
+    return 0;
+}
